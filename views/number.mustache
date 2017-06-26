@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Random Number Getter</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <h1>Hello Numbers!</h1>
+    <br>
+    {{#number}}
+      The current number is: {{.}}<br>
+    {{/number}}
+
+    <form action="/number/rng" method="post">
+      <input type="submit" value="Get a Random Number">
+    </form>
+
+    <form action="/number/list" method="post">
+      <input type="submit" value="Get 15 Random Numbers">
+    </form>
+
+    <a href="/">Back to Home</a>
+
+  </body>
+</html>

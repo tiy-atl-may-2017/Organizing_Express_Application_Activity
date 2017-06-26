@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Random Word Getter</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <h1>Hello Words!</h1>
+
+    List of words:<br>
+    {{#words}}
+      {{.}}<br>
+    {{/words}}
+
+    <form action="/word/random" method="post">
+      <input type="submit" value="Get a Random Word">
+    </form>
+
+    <form action="/word/list" method="post">
+      <input type="submit" value="Get a List of Random Words">
+    </form>
+
+    <a href="/">Back to Home</a>
+
+  </body>
+</html>
